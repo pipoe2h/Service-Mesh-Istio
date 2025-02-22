@@ -485,6 +485,7 @@ spec:
         app: loadgenerator
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
+        traffic.sidecar.istio.io/excludeOutboundPorts: '80'
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
